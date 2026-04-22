@@ -622,6 +622,139 @@ public class Main {
 
 <img width="364" height="248" alt="image" src="https://github.com/user-attachments/assets/535cf114-dd72-42e8-8613-fa582188a45b" />
 ## assi-12
+# 📝 Java Registration Form (Swing + JDBC)
+This project is a **Java Swing-based Registration Form** that stores user data in a **MySQL database using JDBC**.
+## Features
+- GUI form using Swing
+- Multiple input fields (Name, Email, Password, Gender, Course, City, Contact)
+- Data stored in MySQL database
+- Uses PreparedStatement (prevents SQL injection)
+## Technologies Used
+- Java (Swing)
+- JDBC
+- MySQL
+- VS Codes
+
+## Database Setup
+CREATE DATABASE studentdb;
+USE studentdb;
+
+CREATE TABLE registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(50),
+    gender VARCHAR(10),
+    course VARCHAR(50),
+    city VARCHAR(50),
+    contact VARCHAR(15)
+);
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.sql.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        JFrame f = new JFrame("Form");
+        f.setSize(400,400);
+        f.setLayout(null);
+
+        JLabel l1 = new JLabel("Name:");
+        l1.setBounds(20,20,100,20);
+        JTextField t1 = new JTextField();
+        t1.setBounds(120,20,150,20);
+
+        JLabel l2 = new JLabel("Email:");
+        l2.setBounds(20,50,100,20);
+        JTextField t2 = new JTextField();
+        t2.setBounds(120,50,150,20);
+
+        JLabel l3 = new JLabel("Password:");
+        l3.setBounds(20,80,100,20);
+        JPasswordField t3 = new JPasswordField();
+        t3.setBounds(120,80,150,20);
+
+        JLabel l4 = new JLabel("Gender:");
+        l4.setBounds(20,110,100,20);
+        JRadioButton r1 = new JRadioButton("Male");
+        r1.setBounds(120,110,70,20);
+        JRadioButton r2 = new JRadioButton("Female");
+        r2.setBounds(200,110,80,20);
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(r1); bg.add(r2);
+
+        JLabel l5 = new JLabel("Course:");
+        l5.setBounds(20,140,100,20);
+        String courses[] = {"B.Tech","BCA","MCA"};
+        JComboBox cb = new JComboBox(courses);
+        cb.setBounds(120,140,150,20);
+
+        JLabel l6 = new JLabel("City:");
+        l6.setBounds(20,170,100,20);
+        JTextField t6 = new JTextField();
+        t6.setBounds(120,170,150,20);
+
+        JLabel l7 = new JLabel("Contact:");
+        l7.setBounds(20,200,100,20);
+        JTextField t7 = new JTextField();
+        t7.setBounds(120,200,150,20);
+
+        JButton b = new JButton("Submit");
+        b.setBounds(140,250,100,30);
+
+        f.add(l1); f.add(t1);
+        f.add(l2); f.add(t2);
+        f.add(l3); f.add(t3);
+        f.add(l4); f.add(r1); f.add(r2);
+        f.add(l5); f.add(cb);
+        f.add(l6); f.add(t6);
+        f.add(l7); f.add(t7);
+        f.add(b);
+
+        b.addActionListener(e -> {
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+                Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/studentdb",
+                    "root",
+                    "YOUR_PASSWORD"
+                );
+
+                String gender = r1.isSelected() ? "Male" : "Female";
+
+                String query = "INSERT INTO registration(name,email,password,gender,course,city,contact) VALUES(?,?,?,?,?,?,?)";
+
+                PreparedStatement pst = con.prepareStatement(query);
+
+                pst.setString(1, t1.getText());
+                pst.setString(2, t2.getText());
+                pst.setString(3, new String(t3.getPassword()));
+                pst.setString(4, gender);
+                pst.setString(5, cb.getSelectedItem().toString());
+                pst.setString(6, t6.getText());
+                pst.setString(7, t7.getText());
+
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(f, "Saved!");
+
+                con.close();
+
+            } catch(Exception ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        f.setVisible(true);
+    }
+}
+
+<img width="485" height="494" alt="image" src="https://github.com/user-attachments/assets/e3299e6b-de0b-4e9f-8611-466e9f87319f" />
+<img width="1066" height="381" alt="image" src="https://github.com/user-attachments/assets/6b74f1de-9533-49a8-9042-834e15612313" />
+
 
 ## assi-13
 import javax.swing.*;

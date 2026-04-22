@@ -18,7 +18,7 @@
 
 [PROGRAM-9. Write a program using three classes to print 1-100 ,1-100,1-100 with and without thread and analyse the output and repeat the same program using runnable interface.](#assi-9)
 
-[PROGRAM-10. Using the concept of multithreading the output of all three threads must be synchronised (use join method).] (#assi-10)
+[PROGRAM-10. Using the concept of multithreading the output of all three threads must be synchronised (use join method).](#assi-10)
 
 [PROGRAM-11.  Addition of 2 numbers using swing.](#assi-11)
 

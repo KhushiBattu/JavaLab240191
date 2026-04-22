@@ -16,6 +16,34 @@
 
 [PROGRAM-8 DEMONSTRATE ALL THREE TYPES OF INHERITANCE WITH MINIMAL SIZE OF CODE](#assi-8)
 
+[PROGRAM-9. Write a program using three classes to print 1-100 ,1-100,1-100 with and without thread and analyse the output and repeat the same program using runnable interface.](#assi-9)
+
+[PROGRAM-10. Using the concept of multithreading the output of all three threads must be synchronised (use join method).] (#assi-10)
+
+[PROGRAM-11.  Addition of 2 numbers using swing.](#assi-11)
+
+[PROGRAM-12.  Make a registration form with 10 elements and send the data into database (use jdbc connectivity)](#assi-12)
+
+[PROGRAM-13.  Make one calculator in swing.](#assi-13)
+
+[PROGRAM-14.  Matrix Addition using swing class.](#assi-14)
+
+[PROGRAM-15.  Create one jframe apply 10 buttons on that after clicking on each button a new structure is created.(Circle, oval rectangle, etc ....)](#assi-15)
+
+[PROGRAM-16.  Just using mouse Event create a frame like paint brush with selection of colour and width .](#assi-16)
+
+[PROGRAM-17.  Create a package of any 5 classes of your choice and import it.](#assi-17)
+
+[PROGRAM-18.  Create one package and sub package  import and test it .](#assi-18)
+
+[PROGRAM-19.  Create one small array of size 5 apply array out of bounds exception using try catch give a proper message in catch and demonstrate the exception exactly in the same fashion demonstrate arithmetic exception .](#assi-19)
+
+[PROGRAM-20.  To test the range of age of one student.write a program using user defined exception.](#assi-20)
+
+[PROGRAM-21.  File Handling Programs (given in the PPT)](#assi-21)
+
+[PROGRAM-22.  Inheritance Programs, using interface and abstract classes.](#assi-22)
+
 ## assi-1
 ```import java.util.Scanner;
 class Calculator {

@@ -393,6 +393,7 @@ public class Main{
 <img width="754" height="394" alt="image" src="https://github.com/user-attachments/assets/218927bc-40f2-40f2-9e20-807547526632" />
 
 ## assi-8
+
 ```class A {
     void showA() {
         System.out.println("Class A");
@@ -438,7 +439,7 @@ public class Main {
 
 ## assi-9
 
-class WithoutThread {
+```class WithoutThread {
     void printNumbers(String name) {
         for (int i = 1; i <= 100; i++) {
             System.out.println(name + ": " + i);
@@ -514,13 +515,14 @@ public class Main {
         r2.start();
         r3.start();
     }
-}
+}```
 <img width="663" height="221" alt="image" src="https://github.com/user-attachments/assets/be70717a-4117-4cb2-8cca-5794dba09bd8" />
 <img width="371" height="218" alt="image" src="https://github.com/user-attachments/assets/f00c3cba-bbc6-475e-8e79-807849d13746" />
 <img width="438" height="197" alt="image" src="https://github.com/user-attachments/assets/6dc547ca-67b0-4616-bfc5-e75421b927d3" />
 
 ## assi-10
-class MyThread extends Thread {
+
+```class MyThread extends Thread {
     String name;
 
     MyThread(String name) {
@@ -557,14 +559,14 @@ public class Main {
 
         System.out.println("Execution completed in order.");
     }
-}
+}```
 
 <img width="590" height="217" alt="image" src="https://github.com/user-attachments/assets/85aa9036-6300-4fce-b033-6402a12db537" />
 
 ## assi-11
+
 import javax.swing.*;
 import java.awt.event.*;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -619,7 +621,7 @@ public class Main {
         f.setVisible(true);
     }
 }
-
+```
 <img width="364" height="248" alt="image" src="https://github.com/user-attachments/assets/535cf114-dd72-42e8-8613-fa582188a45b" />
 
 ## assi-12
@@ -762,9 +764,9 @@ public class Main {
 
 
 ## assi-13
+
 import javax.swing.*;
 import java.awt.event.*;
-
 public class Main implements ActionListener {
 
     JFrame f;
@@ -846,9 +848,9 @@ public class Main implements ActionListener {
 <img width="364" height="494" alt="image" src="https://github.com/user-attachments/assets/2489e4a9-18bd-47aa-a3ef-38661fa87858" />
 
 ## assi-14
+
 import javax.swing.*;
 import java.awt.event.*;
-
 public class Main implements ActionListener {
 
     JFrame f;
@@ -930,6 +932,7 @@ public class Main implements ActionListener {
 <img width="480" height="491" alt="image" src="https://github.com/user-attachments/assets/fabce661-1360-4856-85c4-f84911d905e1" />
 
 ## assi-15
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -1030,6 +1033,7 @@ public class Main {
 <img width="485" height="492" alt="image" src="https://github.com/user-attachments/assets/1dec8cc2-2203-4e58-8ddb-23d7f8bd4b8c" />
 
 ## assi-16
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -1112,6 +1116,7 @@ public class Main {
 <img width="603" height="621" alt="image" src="https://github.com/user-attachments/assets/64183116-9fa2-4578-b3a0-c3cdd2566cd8" />
 
 ## assi-17
+
 //addition 
 package mypack;
 
@@ -1252,7 +1257,7 @@ public class Main {
 
         System.out.println("Program continues after handling exceptions.");
     }
-}
+}```
 
 <img width="684" height="173" alt="image" src="https://github.com/user-attachments/assets/f0501d7e-d86d-4126-b70d-6010b1322b8e" />
 
@@ -1295,7 +1300,7 @@ public class Main {
 
 ## assi-21
 
-package FileHandling;
+```package FileHandling;
 import java.io.*;
 
 public class Main {
@@ -1328,7 +1333,7 @@ public class Main {
             System.out.println("Error: " + e);
         }
     }
-}
+}```
 
 
 <img width="752" height="213" alt="image" src="https://github.com/user-attachments/assets/21c794f2-2c3f-4890-96dc-1e89fe68bc1f" />
@@ -1336,7 +1341,7 @@ public class Main {
 
 ## assi-22
 
-// Interface
+```// Interface
 interface Sports {
     void play();
 }

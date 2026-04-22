@@ -621,9 +621,12 @@ public class Main {
 }
 
 <img width="364" height="248" alt="image" src="https://github.com/user-attachments/assets/535cf114-dd72-42e8-8613-fa582188a45b" />
+
 ## assi-12
+
+
 # 📝 Java Registration Form (Swing + JDBC)
-This project is a **Java Swing-based Registration Form** that stores user data in a **MySQL database using JDBC**.
+ This project is a **Java Swing-based Registration Form** that stores user data in a **MySQL database using JDBC**.
 ## Features
 - GUI form using Swing
 - Multiple input fields (Name, Email, Password, Gender, Course, City, Contact)
@@ -753,6 +756,8 @@ public class Main {
 }
 
 <img width="485" height="494" alt="image" src="https://github.com/user-attachments/assets/e3299e6b-de0b-4e9f-8611-466e9f87319f" />
+
+
 <img width="1066" height="381" alt="image" src="https://github.com/user-attachments/assets/6b74f1de-9533-49a8-9042-834e15612313" />
 
 
